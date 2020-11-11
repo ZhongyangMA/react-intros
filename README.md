@@ -36,11 +36,16 @@ React组件
 1. 须继承自 React.Component 类
 2. 必须有render方法，并返回一个 react 对象或 null
 
-父子组件传递数据
- - 组件中有一个只读的对象叫 props
- - 传递给组件的属性会转变为 props对象的属性
-
 封装组件到独立的文件中
 
  - export default Xxxx
 
+父子组件传递数据: props
+ - 组件中有一个只读的对象叫 props
+ - 传递给组件的属性会转变为 props对象的属性
+ 
+类组件的状态: state
+ - 只有类组件才有状态
+ - 状态是私有的 完全由组件来控制
+
+组件绑定事件

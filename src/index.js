@@ -30,6 +30,9 @@ function Welcome(props) {
 class ShoppingList extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            gender: "male"
+        }
     }
 
     render() {
@@ -40,6 +43,7 @@ class ShoppingList extends React.Component {
                     <li>Instagram</li>
                     <li>WhatsApp</li>
                 </ul>
+                <p>{this.state.gender}</p>
             </div>
         );
     }
@@ -49,6 +53,6 @@ class ShoppingList extends React.Component {
  * 渲染入口
  */
 ReactDOM.render(
-    <Welcome name="Jack Ma" age={58} />,
+    <ShoppingList name="Jack Ma" age={58} />,
     document.getElementById("root")
 );
