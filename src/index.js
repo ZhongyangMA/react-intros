@@ -18,7 +18,30 @@ function Welcome(props) {
     )
 }
 
+/**
+ * 类组件
+ * 1. 须继承自 React.Component 类
+ * 2. 必须有render方法，并返回一个 react 对象或 null
+ */
+
+class ShoppingList extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1>Shopping List for: {this.props.name}</h1>
+                <ul>
+                    <li>Instagram</li>
+                    <li>WhatsApp</li>
+                </ul>
+            </div>
+        );
+    }
+}
+
+/**
+ * 渲染入口
+ */
 ReactDOM.render(
-    <Welcome name={"test"} />,
+    <ShoppingList name="Test Name.." />,
     document.getElementById("root")
 );

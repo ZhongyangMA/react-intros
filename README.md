@@ -14,7 +14,7 @@ JSX to everything
  
 React的基本使用
 
- - ReactDOM.render 渲染入口
+ - ReactDOM.render() 渲染入口
  
 JSX的基本使用
 
@@ -31,4 +31,8 @@ React组件
 2. 函数必须有返回值，可以是 null 或 JSX 对象
 3. 返回的 JSX 必须有一个根元素
 4. 组件的返回值用（）包裹，避免换行问题
+
+类组件
+1. 须继承自 React.Component 类
+2. 必须有render方法，并返回一个 react 对象或 null
 
