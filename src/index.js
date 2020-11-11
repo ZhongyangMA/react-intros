@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Hello from "./Hello";
 
 /**
  * 函数组件
@@ -13,7 +14,9 @@ function Welcome(props) {
     return (
         <div>
             <h1>函数式组件</h1>
-            <p>函数式组件：{props.name}</p>
+            <p>姓名：{props.name}</p>
+            <p>年龄：{props.age}</p>
+            <Hello name={props.name} />
         </div>
     )
 }
@@ -25,6 +28,10 @@ function Welcome(props) {
  */
 
 class ShoppingList extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
             <div>
@@ -42,6 +49,6 @@ class ShoppingList extends React.Component {
  * 渲染入口
  */
 ReactDOM.render(
-    <ShoppingList name="Test Name.." />,
+    <Welcome name="Jack Ma" age={58} />,
     document.getElementById("root")
 );
