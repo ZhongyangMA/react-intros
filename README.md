@@ -1,4 +1,4 @@
-# react-exercise
+# react-intros
 
 An Introduction to ReactJS.
 
