@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Hello from "./Hello";
+import Welcome from "./Welcome";
+import ShoppingList from "./ShoppingList";
 
 /**
  * 函数组件
@@ -10,7 +12,7 @@ import Hello from "./Hello";
  * 3. 返回的 JSX 必须有一个根元素
  * 4. 组件的返回值用（）包裹，避免换行问题
  */
-function Welcome(props) {
+function Wel(props) {
     return (
         <div>
             <h1>函数式组件</h1>
@@ -26,8 +28,7 @@ function Welcome(props) {
  * 1. 须继承自 React.Component 类
  * 2. 必须有render方法，并返回一个 react 对象或 null
  */
-
-class ShoppingList extends React.Component {
+class Shopping extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
