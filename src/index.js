@@ -4,6 +4,7 @@ import './index.css';
 import Hello from "./Hello";
 import Welcome from "./Welcome";
 import ShoppingList from "./ShoppingList";
+import BindTest from "./BindTest";
 
 /**
  * 函数组件
@@ -54,6 +55,6 @@ class Shopping extends React.Component {
  * 渲染入口
  */
 ReactDOM.render(
-    <ShoppingList name="Jack Ma" age={58} />,
+    <BindTest />,
     document.getElementById("root")
 );
